@@ -18,5 +18,4 @@ return ({
     {"wintermute-cell/gitignore.nvim", run = ':Gitignore'},
 	{'cacharle/c_formatter_42.vim', run = 'CFormatter42'},
 	'windwp/nvim-autopairs',
-	"github/copilot.vim"
 })
