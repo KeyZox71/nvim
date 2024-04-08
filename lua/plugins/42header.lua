@@ -7,8 +7,8 @@ return {
 			margin = 5,
 			default_map = true,     -- default Mapping <F1> in normal mode
 			auto_update = true,     -- update header when saving
-			user = "babonnet",      -- your user
-			mail = "babonnet@42angouleme.fr", -- your mail
+			user = "adjoly",      -- your user
+			mail = "adjoly@student.42angouleme.fr", -- your mail
 			-- asciiart = { "......", "......",} -- headers with different ascii arts are incompatible with each other
 		})
 
