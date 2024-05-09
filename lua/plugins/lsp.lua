@@ -7,7 +7,7 @@ return {
 
             lsp.preset("recommended")
             lsp.ensure_installed({
-                'lua_ls', 'bashls', 'clangd',
+                'lua_ls', 'bashls',
             })
 
             lsp.configure('lua_ls', {
