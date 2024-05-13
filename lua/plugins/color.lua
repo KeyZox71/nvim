@@ -39,7 +39,7 @@ return {
 --				background = true,
 --			},
 --		},
-		--mason = true,
+		mason = true,
 		cmp = true,
 	})
 }
