@@ -1,5 +1,5 @@
 return {
-	"HiPhish/nvim-ts-rainbow2"
+	"HiPhish/nvim-ts-rainbow2",
 	config = function()
 		require("nvim-treesitter.configs").setup {
 			rainbow = {

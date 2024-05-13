@@ -1,4 +1,5 @@
 return {
+	"nvim-lua/plenary.nvim",
     "theprimeagen/harpoon",
 	config = function()
 		local mark = require("harpoon.mark")
