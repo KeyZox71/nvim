@@ -1,12 +1,8 @@
 return ({
-    { "folke/neoconf.nvim", cmd = "Neoconf" },
-    "folke/neodev.nvim",
-    "folke/which-key.nvim",
-    "nvim-lua/plenary.nvim",
-    "nvim-lua/popup.nvim",
-    'ThePrimeagen/vim-be-good',
-    "christoomey/vim-tmux-navigator",
-    {
+	'ThePrimeagen/vim-be-good',
+    'christoomey/vim-tmux-navigator',
+	'windwp/nvim-autopairs'
+	{
         "kylechui/nvim-surround",
         version = "*", -- For stability; omit to use `main` branch for latest features
         event = "VeryLazy",
@@ -14,7 +10,4 @@ return ({
             require("nvim-surround").setup({})
         end
     },
-    {"wintermute-cell/gitignore.nvim", run = ':Gitignore'},
-	{'cacharle/c_formatter_42.vim', run = 'CFormatter42'},
-	'windwp/nvim-autopairs',
 })

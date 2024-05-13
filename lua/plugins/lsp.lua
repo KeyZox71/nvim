@@ -7,7 +7,7 @@ return {
 
             lsp.preset("recommended")
             lsp.ensure_installed({
-                'lua_ls', 'bashls',
+                'lua_ls', 'clangd',
             })
 
             lsp.configure('lua_ls', {
@@ -28,7 +28,6 @@ return {
                 ["<C-Space>"] = cmp.mapping.complete(),
             })
 
-            -- Remove mappings if not needed
             cmp_mappings['<Tab>'] = nil
             cmp_mappings['<S-Tab>'] = nil
 
@@ -36,7 +35,6 @@ return {
 
             lsp.on_attach(function(client, bufnr)
                 local opts = { buffer = bufnr, remap = false }
-                -- Key mappings for LSP functions
             end)
 
             lsp.setup()

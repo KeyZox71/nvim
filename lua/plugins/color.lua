@@ -6,8 +6,8 @@ return {
 		vim.cmd.colorscheme "catppuccin"
 	end,
 	setup = ({
-		flavour = "auto", -- will respect terminal's background
-		background = { -- :h background
+		flavour = "auto", 
+		background = { 
 			light = "latte",
 			dark = "frappe",
 		},
@@ -19,32 +19,27 @@ return {
 			notify = false,
 			telescope = {
 				enabled = true,
-				-- style = "nvchad"
 			},
 		},
-		native_lsp = {
-			enabled = true,
-			virtual_text = {
-				errors = { "italic" },
-				hints = { "italic" },
-				warnings = { "italic" },
-				information = { "italic" },
-			},
-			underlines = {
-				errors = { "underline" },
-				hints = { "underline" },
-				warnings = { "underline" },
-				information = { "underline" },
-			},
-			inlay_hints = {
-				background = true,
-			},
-		},
-		telescope = {
-			enabled = true,
-			-- style = "nvchad"
-		},
-		mason = true,
+--		native_lsp = {
+--			enabled = true,
+--			virtual_text = {
+--				errors = { "italic" },
+--				hints = { "italic" },
+--				warnings = { "italic" },
+--				information = { "italic" },
+--			},
+--			underlines = {
+--				errors = { "underline" },
+--				hints = { "underline" },
+--				warnings = { "underline" },
+--				information = { "underline" },
+--			},
+--			inlay_hints = {
+--				background = true,
+--			},
+--		},
+		--mason = true,
 		cmp = true,
 	})
 }

@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("mason").setup {
 			registries = {
-				"lua:my-registry",
+				--"lua:my-registry",
 				"github:mason-org/mason-registry",
 			},
 		}
