@@ -1,5 +1,5 @@
 {
-	description = "My neovim config as a flake !";
+  description = "A Nix Flake with a Home Manager module for Neovim and nvimzox";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -26,7 +26,6 @@
             };
             config = mkIf config.programs.neovim.nvimzox.enable {
 				programs.neovim.enable = true;
-				xdg.configFile.neovim.source = ./;
             };
           };
         })
