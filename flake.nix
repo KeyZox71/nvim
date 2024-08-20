@@ -3,7 +3,7 @@
 
   outputs = _: {
     nvimzox = {
-		xdg.configFile.neovim.source = "./";
+		xdg.configFile.neovim.source = ./;
 	};
   };
 }
