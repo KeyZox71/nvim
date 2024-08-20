@@ -11,7 +11,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }:
     let
-      system = "x86_64-linux"; # Replace with your system architecture if different
+      system = "86_64-linux"; # Replace with your system architecture if different
       pkgs = import nixpkgs { inherit system; };
     in
     {
