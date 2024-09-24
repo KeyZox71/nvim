@@ -9,7 +9,6 @@ return {
 		"hrsh7th/nvim-cmp",
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
-		"j-hui/fidget.nvim",
 	},
 
 	config = function()
@@ -27,14 +26,7 @@ return {
 			-- Other keybindings...
 		end
 
-		require('lspconfig').clangd.setup({
-			cmd = { 
-				"clangd",
-				"--header-insertion=never"
-			},
-			on_attach = on_attach,
-			capabilities = capabilities,
-		})
+		require('lspconfig').clangd.setup({})
 		require('lspconfig').gopls.setup({})
 
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
