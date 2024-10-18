@@ -29,6 +29,7 @@
 						];
 					};
 				});
+				overlays.default = neovim-overlay;
 			}
 		);
 }
