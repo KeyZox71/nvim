@@ -28,6 +28,8 @@ return {
 
 		require('lspconfig').clangd.setup({})
 		require('lspconfig').gopls.setup({})
+		require('lspconfig').nil_ls.setup({})
+		require('lspconfig').lua_ls.setup({})
 
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
