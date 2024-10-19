@@ -31,7 +31,9 @@
 						];
 					};
 				});
-				overlays.default = neovim-overlay;
-			}
-		);
+		})
+		// {
+			# You can add this overlay to your NixOS configuration
+			overlays.default = neovim-overlay;
+		};
 }
