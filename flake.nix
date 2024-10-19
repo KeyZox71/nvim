@@ -6,9 +6,15 @@
 	};
 
 	outputs = inputs@{ self, nixpkgs, flake-utils, ... }: let
+		supportedSystems = [
+			"x86_64-linux"
+			"aarch64-linux"
+			"x86_64-darwin"
+			"aarch64-darwin"
+		];
 		neovim-overlay = import ./nix/neovim-overlay.nix {inherit inputs;};
 	in
-		flake-utils.lib.eachDefaultSystem (system: let
+		flake-utils.lib.eachSystem supportedSystems (system: let
 			pkgs = import nixpkgs {
 				inherit system;
 				overlays = [
