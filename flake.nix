@@ -16,8 +16,10 @@
 				];
 			};
 			in {
-				defaultPackage = pkgs.nvim-pkg;
-				packages.nvim = pkgs.nvim-pkg;
+				packages = rec {
+					default = nvim;
+					nvim = pkgs.nvim-pkg;
+				};
 				devShells = ({
 					default = pkgs.mkShell.override
 					{}
