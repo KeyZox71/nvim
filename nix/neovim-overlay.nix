@@ -88,6 +88,7 @@ with final.pkgs.lib; let
     lua-language-server # Lua LSP
     nil # nix LSP
 	clang-tools # C/C++ LSP
+	bear # bear
   ];
 in {
   # This is the neovim derivation
