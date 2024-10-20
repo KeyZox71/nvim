@@ -5,7 +5,7 @@
 		flake-utils.url = "github:numtide/flake-utils";
 	};
 
-	outputs = inputs@{ self, nixpkgs, flake-utils, ... }: let
+	outputs = inputs@{ nixpkgs, flake-utils, ... }: let
 		supportedSystems = [
 			"x86_64-linux"
 			"aarch64-linux"
@@ -26,7 +26,7 @@
 					default = nvim;
 					nvim = pkgs.nvim-pkg;
 				};
-				devShells = ({
+				devShells = {
 					default = pkgs.mkShell.override
 					{}
 					{
@@ -36,7 +36,7 @@
 							nvim-pkg
 						];
 					};
-				});
+				};
 		})
 		// {
 			# You can add this overlay to your NixOS configuration

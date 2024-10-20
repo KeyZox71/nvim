@@ -26,9 +26,18 @@ return {
 			-- Other keybindings...
 		end
 
+		local function quickfix()
+			vim.lsp.buf.code_action({
+				filter = function(a) return a.isPreferred end,
+				apply = true
+			})
+		end
+
+		vim.keymap.set('n', '<leader>qf', quickfix, opts)
+
 		require('lspconfig').clangd.setup({})
 		require('lspconfig').gopls.setup({})
-		require('lspconfig').nil_ls.setup({})
+		require('lspconfig').nixd.setup({})
 		require('lspconfig').lua_ls.setup({})
 
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }

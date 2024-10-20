@@ -12,7 +12,7 @@ with final.pkgs.lib; let
   extraPackages = with pkgs; [
     # language servers
     lua-language-server # Lua LSP
-    nil # nix LSP
+	nixd # nix LSP
 	clang-tools # C/C++ LSP
 
 	# other tools
