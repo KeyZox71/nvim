@@ -25,7 +25,7 @@ nixpkgs.overlays = [
 ```
 nixpkgs.nvim-pkg
 ```
-#### Or you can juste run the flake
+#### Or you can just run the flake
 
 ```bash
 nix run github:keyzox71/nvim
