@@ -23,7 +23,7 @@ nixpkgs.overlays = [
 ```
 *And finally add the package to your home or nixos package*
 ```
-nixpkgs.nvim-pkg
+nixpkgs.keyznvim
 ```
 #### Or you can just run the flake
 
@@ -40,5 +40,5 @@ git clone https://github.com/keyzox71/nvim ~/.config/nvim
 
 ## Liscence and credit
 
-For nixxing [kickstart-nix.nvim](https://github.com/nix-community/kickstart-nix.nvim) was used and modified to fit my need
+For nixxing [kickstart-nix.nvim](https://github.com/nix-community/kickstart-nix.nvim) was used and modified to fit my need\
 Base config [bonsthie.nvim](https://github.com/bonsthie/nvim) early version but heavily modified to fit my need

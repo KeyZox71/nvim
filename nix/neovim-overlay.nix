@@ -20,7 +20,7 @@ with final.pkgs.lib; let
 	bear # bear
   ];
 in {
-  nvim-pkg = mkNeovim {
+  keyznvim = mkNeovim {
     plugins = all-plugins;
     inherit extraPackages;
   };
