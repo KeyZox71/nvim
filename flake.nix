@@ -24,7 +24,7 @@
 			in {
 				packages = rec {
 					default = nvim;
-					nvim = pkgs.nvim-pkg;
+					nvim = pkgs.keyznvim;
 				};
 				devShells = {
 					default = pkgs.mkShell.override
@@ -33,7 +33,7 @@
 						packages = with pkgs; [
 							nil
 							lua-language-server
-							nvim-pkg
+							keyznvim
 						];
 					};
 				};
