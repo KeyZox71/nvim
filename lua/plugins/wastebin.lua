@@ -3,7 +3,7 @@ return {
     "matze/wastebin.nvim",
     config = function ()
 		require("wastebin").setup({
-			url = "https://wastebin.vaultzox.duckdns.org",
+			url = "https://paste.keyzox.me",
 			-- To open on default browser
 			open_cmd = "open",
 			-- To copy on hyprland
