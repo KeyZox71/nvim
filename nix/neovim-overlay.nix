@@ -20,15 +20,8 @@ with final.pkgs.lib; let
 		bear # bear
 	];
 in {
-<<<<<<< HEAD
-  keyznvim = mkNeovim {
-    plugins = all-plugins;
-    inherit extraPackages;
-  };
-=======
 	keyznvim = mkNeovim {
 		plugins = all-plugins;
 		inherit extraPackages;
 	};
->>>>>>> indev
 }
