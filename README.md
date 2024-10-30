@@ -42,6 +42,10 @@ or on Windows
 git clone https://github.com/keyzox71/nvim ~/AppData/Local/nvim
 ```
 
+## Contributing
+
+Feel free to contribute to this project but there is a few rule you need to follow in [CONTRIBUTING.md](https://github.com/keyzox71/nvim/blob/master/CONTRIBUTING.md)
+
 ## Liscence and credit
 
 For nixxing [kickstart-nix.nvim](https://github.com/nix-community/kickstart-nix.nvim) was used and modified to fit my need\
