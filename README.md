@@ -25,7 +25,11 @@ nixpkgs.overlays = [
 ```
 nixpkgs.keyznvim
 ```
+<<<<<<< HEAD
 #### Or you can just run the flake
+=======
+#### Or you can juste run the flake
+>>>>>>> indev
 
 ```bash
 nix run github:keyzox71/nvim
@@ -37,6 +41,13 @@ Just clone the repo into the nvim config
 ```bash
 git clone https://github.com/keyzox71/nvim ~/.config/nvim
 ```
+<<<<<<< HEAD
+=======
+or on Windows
+```bash
+git clone https://github.com/keyzox71/nvim ~/AppData/Local/nvim
+```
+>>>>>>> indev
 
 ## Liscence and credit
 
