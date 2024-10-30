@@ -37,6 +37,10 @@ Just clone the repo into the nvim config
 ```bash
 git clone https://github.com/keyzox71/nvim ~/.config/nvim
 ```
+or on Windows
+```bash
+git clone https://github.com/keyzox71/nvim ~/AppData/Local/nvim
+```
 
 ## Liscence and credit
 
