@@ -1,6 +1,6 @@
 return {
   {
-    "matze/wastebin.nvim",
+    "keyzox71/wastebin.nvim",
     config = function ()
 		require("wastebin").setup({
 			url = "https://paste.keyzox.me",
