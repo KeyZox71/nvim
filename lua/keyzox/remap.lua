@@ -11,3 +11,9 @@ vim.keymap.set("n", "<leader>gd", goto_definition)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.cmd([[command! W w]])
+
+vim.api.nvim_create_user_command('CompileCommands', function()
+	os.execute('bear -- make')
+	vim.cmd('LspRestart')
+end, {})
+
