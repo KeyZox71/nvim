@@ -37,7 +37,18 @@ return {
 
 		require('lspconfig').clangd.setup({})
 		require('lspconfig').gopls.setup({})
-		require('lspconfig').nixd.setup({})
+		require('lspconfig').nixd.setup({
+			settings = {
+				nixd = {
+					formatting = {
+						command = { "nixfmt" },
+					},
+					nixpkgs = {
+						expr = "import <nixpkgs> { }",
+					},
+				},
+			},
+		})
 		require('lspconfig').lua_ls.setup({})
 
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
