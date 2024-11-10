@@ -13,8 +13,8 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require('keyzox.remap')
 require('keyzox.set')
+require('keyzox.remap')
 require("lazy").setup("plugins", {
 	change_detection = {
 		notify = false;
