@@ -15,7 +15,6 @@ return ({
 		lazy_support = true,
 		session_lens = {
 			load_on_setup = true,
-			previewer = true,
 			mappings = {
 				-- Mode can be a string or a table, e.g. {"i", "n"} for both insert and normal mode
 				delete_session = { "i", "<C-D>" },
