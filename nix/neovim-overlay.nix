@@ -15,6 +15,7 @@ let
     lua-language-server # Lua LSP
     nixd # nix LSP
     clang-tools # C/C++ LSP
+	deno # Deno for deno lsp
 
     # formatting
     nixfmt-rfc-style # nix formatting

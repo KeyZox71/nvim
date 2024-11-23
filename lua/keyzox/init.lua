@@ -13,6 +13,10 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.g.markdown_fenced_languages = {
+  "ts=typescript"
+}
+
 require('keyzox.set')
 require('keyzox.remap')
 require("lazy").setup("plugins", {
