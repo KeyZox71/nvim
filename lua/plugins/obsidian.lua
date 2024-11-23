@@ -19,18 +19,6 @@ return {
   },
   opts = {
     workspaces = {
-      {
-        name = "note",
-        path = "~/Nextcloud/Obsidian/note",
-      },
-      {
-        name = "site-doc",
-        path = "~/Nextcloud/Obsidian/site-doc",
-      },
-      {
-        name = "test",
-        path = "~/Nextcloud/Obsidian/test",
-      },
     },
 
     -- see below for full list of options 👇
