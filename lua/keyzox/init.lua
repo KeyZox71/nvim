@@ -24,4 +24,8 @@ require("lazy").setup("plugins", {
 		notify = false;
 	}
 })
-vim.treesitter.language.register('vento', 'vto')
+vim.filetype.add({
+    extension = {
+        vto = "html",
+    }
+})
