@@ -17,6 +17,7 @@ vim.g.markdown_fenced_languages = {
   "ts=typescript"
 }
 
+
 require('keyzox.set')
 require('keyzox.remap')
 require("lazy").setup("plugins", {
@@ -29,3 +30,5 @@ vim.filetype.add({
         vto = "html",
     }
 })
+
+vim.cmd("hi Normal ctermbg=none guibg=none")
