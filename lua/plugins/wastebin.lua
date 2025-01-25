@@ -3,7 +3,7 @@ return {
     "keyzox71/wastebin.nvim",
     config = function ()
 		require("wastebin").setup({
-			url = "https://paste.keyzox.me",
+			url = "https://paste.kanel.ovh",
 		})
 	end,
   }
