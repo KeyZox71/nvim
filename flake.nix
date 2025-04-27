@@ -36,6 +36,7 @@
               nixfmt-rfc-style
               lua-language-server
               keyznvim
+				solc
             ];
           };
         };
