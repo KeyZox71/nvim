@@ -13,10 +13,22 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require('keyzox.remap')
+vim.g.markdown_fenced_languages = {
+  "ts=typescript"
+}
+
+
 require('keyzox.set')
+require('keyzox.remap')
 require("lazy").setup("plugins", {
 	change_detection = {
 		notify = false;
 	}
 })
+vim.filetype.add({
+    extension = {
+        vto = "html",
+    }
+})
+
+vim.cmd("hi Normal ctermbg=none guibg=none")

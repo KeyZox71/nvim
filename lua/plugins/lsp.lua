@@ -37,6 +37,9 @@ return {
 
 		require('lspconfig').clangd.setup({})
 		require('lspconfig').gopls.setup({})
+		require('lspconfig').denols.setup({})
+		require('lspconfig').bashls.setup({})
+		require('lspconfig').solc.setup({})
 		require('lspconfig').nixd.setup({
 			settings = {
 				nixd = {
