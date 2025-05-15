@@ -2,8 +2,8 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "-", vim.cmd.Ex)
 
 local function goto_definition()
-    vim.lsp.buf.definition()
-    vim.cmd('normal! zz')
+	vim.lsp.buf.definition()
+	vim.cmd('normal! zz')
 end
 
 vim.keymap.set("n", "<leader>gd", goto_definition)
@@ -17,5 +17,9 @@ vim.cmd([[command! W w]])
 vim.api.nvim_create_user_command('CompileCommands', function()
 	os.execute('bear -- make')
 	vim.cmd('LspRestart')
+end, {})
+
+vim.keymap.set("n", "<leader>tt", function()
+	vim.cmd('TodoTelescope')
 end, {})
 
