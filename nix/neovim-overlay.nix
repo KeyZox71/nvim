@@ -12,16 +12,15 @@ let
 
   extraPackages = with pkgs; [
     # language servers
-    lua-language-server # Lua LSP
-    nixd # nix LSP
-    clang-tools # C/C++ LSP
+    # lua-language-server # Lua LSP
+    # nixd # nix LSP
+    # clang-tools # C/C++ LSP
 
     # formatting
-    nixfmt-rfc-style # nix formatting
+    # nixfmt-rfc-style # nix formatting
 
     # other tools
     ripgrep # For greping in all files
-    bear # bear
   ];
 in
 {
