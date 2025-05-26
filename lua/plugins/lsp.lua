@@ -1,7 +1,7 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		{'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
+		{ 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' },
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
@@ -20,7 +20,7 @@ return {
 
 		local on_attach = function(client, bufnr)
 			-- Keybindings (add more as needed)
-			local bufopts = { noremap=true, silent=true, buffer=bufnr }
+			local bufopts = { noremap = true, silent = true, buffer = bufnr }
 			vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
 			vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
 			-- Other keybindings...
@@ -53,6 +53,12 @@ return {
 			},
 		})
 		require('lspconfig').lua_ls.setup({})
+		require('lspconfig').ts_ls.setup({
+			filetypes = {
+				"javascript",
+				"typescript",
+			},
+		})
 
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
@@ -72,8 +78,8 @@ return {
 				{ name = 'nvim_lsp' },
 				{ name = 'luasnip' }, -- For luasnip users.
 			}, {
-					{ name = 'buffer' },
-				})
+				{ name = 'buffer' },
+			})
 		})
 
 		lsp.setup()
