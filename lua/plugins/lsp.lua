@@ -53,12 +53,12 @@ return {
 			},
 		})
 		require('lspconfig').lua_ls.setup({})
-		require('lspconfig').ts_ls.setup({
-			filetypes = {
-				"javascript",
-				"typescript",
-			},
-		})
+		-- require('lspconfig').ts_ls.setup({
+		-- 	filetypes = {
+		-- 		"javascript",
+		-- 		"typescript",
+		-- 	},
+		-- })
 
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
