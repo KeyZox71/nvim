@@ -40,6 +40,7 @@ return {
 		-- require('lspconfig').denols.setup({})
 		require('lspconfig').bashls.setup({})
 		require('lspconfig').solidity_ls.setup({
+			root_dir = require('lspconfig.util').root_pattern('.git', '.solhint.json', 'foundry.toml'),
 			settings = {
 				solidity = {
 					linter = "solhint", -- Enable Solhint linter
