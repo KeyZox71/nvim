@@ -39,7 +39,15 @@ return {
 		require('lspconfig').gopls.setup({})
 		-- require('lspconfig').denols.setup({})
 		require('lspconfig').bashls.setup({})
-		require('lspconfig').solc.setup({})
+		require('lspconfig').solidity_ls.setup({
+			settings = {
+				solidity = {
+					linter = "solhint", -- Enable Solhint linter
+				},
+			},
+			on_attach = on_attach,
+			capabilities = capabilities,
+		})
 		require('lspconfig').nixd.setup({
 			settings = {
 				nixd = {
